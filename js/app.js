@@ -132,3 +132,9 @@ themeToggle.addEventListener("click", function () {
 applySavedTheme();
 
 
+// Fixa calling function 
+
+const starBtn = document.querySelector('#starBtn');
+starBtn.addEventListener('click', ()=>{
+  console.log('hello');
+});

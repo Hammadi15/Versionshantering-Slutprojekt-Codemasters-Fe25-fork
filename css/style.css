@@ -235,3 +235,29 @@ button:hover {
 .dark-mode .username-prompt-toggle {
   color: #a5b4fc;
 }
+#starsBtn {
+  position:relative;
+  overflow:visible;
+}
+
+.star {
+  position:absolute;
+  width:10px;
+  height:10px;
+  background: gold;
+  clip-path: polygon(
+     50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%,
+    2% 35%, 39% 35%
+  );
+  pointer-events:none;
+  animation: explode 800ms ease-out forwards; 
+  box-shadow: 0 0 10px gold;
+}
+
+@keyframes explode {
+  to {
+    transform: translate(var(--x), var(--y)) scale(0) rotate(720deg);
+    opacity:0;
+  }
+}
