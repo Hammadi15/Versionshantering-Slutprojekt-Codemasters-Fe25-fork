@@ -121,7 +121,8 @@ button:hover {
 
 .message-card .like-btn.active .thumbs-icon {
     fill: #1877f2 !important;
-    stroke: #1877f2 !important;
+    stroke: #001d43 !important;
+    stroke-width: 1 !important;
 }
 
 .like-btn .thumbs-icon:hover {
@@ -311,6 +312,34 @@ button:hover {
   background: #7c2d12;
   color: #ffedd5;
 }
+
+/* Like button | Dark mode */
+.dark-mode .like-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.dark-mode .like-btn:hover {
+  background-color: transparent;
+}
+
+.dark-mode .thumbs-icon {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+}
+
+.dark-mode .message-card .like-btn.active .thumbs-icon {
+    fill: #1877f2 !important;
+    stroke: white !important;
+    stroke-width: 1 !important;
+}
+
+dark-mode .like-btn .thumbs-icon:hover {
+    stroke: #8480d4;
+}
+
 /* Login/Register overlay */
 #username-prompt-overlay {
   position: fixed;
